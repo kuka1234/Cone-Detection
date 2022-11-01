@@ -3,7 +3,7 @@ from enum import Enum
 import numpy as np
 import coneDetector
 
-pathToImg = "$PATH"
+pathToImg = r"C:\Users\shree\PycharmProjects\coneDetection\detection\Images\350B0489.jpg"
 img = coneDetector.loadImage(pathToImg)
 if type(img) is None:
     raise Exception("Path not valid")
@@ -15,9 +15,9 @@ coneDetector.debugMode = False
 coneDetector.timeMode = False
 
 class Colors(Enum):
-    # yellow = (23,2, True)
-    blue = (107,2, False)
-    # orange = (10,4,False)
+    # yellow = (13,14, True)
+    # blue = (115,3, False)
+    orange = (9,10,False)
 
 def simplePipeline(img):
     finalImg = np.zeros_like(img)
@@ -56,7 +56,7 @@ def complexPipeline(img):
         coneDetector.drawRectForContours(img, contour, rectCol)
     coneDetector.showImg(img)
 
-# simplePipeline(img)
+simplePipeline(img)
 # complexPipeline(img)
 
 

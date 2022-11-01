@@ -67,4 +67,4 @@ some images had to be synthesised in Unity.
 different weather. Therefore, the pipeline should be flexible to allow for a range and easily changeable.
 * The cone colors occur naturally such as the sky (blue) and dried grass (yellow)
 therefore just extracting the colors is not enough to detect cones.
-
+* THe images need to a normalised size to help the min and max size of contours
