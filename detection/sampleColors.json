@@ -1,0 +1,68 @@
+{
+  "Image1": {
+    "path": "detection/Images/blueCones.jpg",
+    "pipeline": ["simple"],
+    "colors": {
+      "blue": {
+        "color": 107,
+        "range":2
+      }
+    }
+  },
+  "Image2": {
+    "path": "detection/Images/yellowCones.jpg",
+    "pipeline": ["simple", "complex"],
+    "colors": {
+      "yellow": {
+        "color": 23,
+        "range":2
+      }
+    }
+  },
+  "Image3": {
+    "path": "detection/Images/cones.png",
+    "pipeline": ["simple"],
+    "colors": {
+      "orange": {
+        "color": 8,
+        "range":2
+      },
+      "blue": {
+        "color": 113,
+        "range":2
+      }
+    }
+  },
+  "Image4": {
+    "path": "detection/Images/realWorld.png",
+    "pipeline": ["complex"],
+    "colors": {
+      "yellow": {
+        "color": 27,
+        "range":11
+      },
+      "blue": {
+        "color": 115,
+        "range":3
+      }
+    }
+  },
+  "Image5": {
+    "path": "detection/Images/harderImage.png",
+    "pipeline": ["complex"],
+    "colors": {
+      "yellow": {
+        "color": 28,
+        "range":2
+      },
+      "blue": {
+        "color": 116,
+        "range":4
+      },
+      "orange": {
+        "color": 10,
+        "range":4
+      }
+    }
+  }
+}
